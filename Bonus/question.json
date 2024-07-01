@@ -1,0 +1,10 @@
+[{"question_text": "What is migth in spanish? ",
+  "alternatives": ["Mitad", "Poder, tener la capacidad o posibilidad de hacer algo",
+                         "sinonimo de medianoche"],
+  "correct_answer": 2},
+
+    {"question_text": "What is hold in spanish? ",
+       "alternatives": ["carta", "portafolio",
+                         "Sostener - Retener"],
+      "correct_answer": 3}
+]
