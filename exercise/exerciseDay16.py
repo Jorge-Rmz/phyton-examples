@@ -12,7 +12,8 @@ compress_button = sg.Button("Convert")
 window = sg.Window("Convertor", layout=[
                                     [label1, input1],
                                     [label2, input2],
-                                    [compress_button]])
+                                    [compress_button]],
+                  )
 
 window.read()
 window.close()
