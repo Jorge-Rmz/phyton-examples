@@ -1,4 +1,4 @@
-from Module.functions import write_todos, get_todos
+from Funtions.functions import write_todos, get_todos
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
     user_action = user_action.strip()
