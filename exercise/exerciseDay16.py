@@ -12,6 +12,7 @@ compress_button = sg.Button("Convert")
 output_label = sg.Text(key="output", text_color="white")
 exit_button = sg.Button("Exit", key="exit")
 
+
 window = sg.Window("Convertor", layout=[
                                     [label1, input1],
                                     [label2, input2],
@@ -24,7 +25,10 @@ while True:
     if event == "exit" or event == sg.WIN_CLOSED:
         break
     if event == "Convert":
-        result = convert(feet=float(values["feet"]), inches=float(values["inches"]))
-        window["output"].update(value=f"{result} m")
+        try:
+            result = convert(feet=float(values["feet"]), inches=float(values["inches"]))
+            window["output"].update(value=f"{result} m")
+        except ValueError:
+            sg.popup("Please, provide two numbers",  font=("Helvetica", 15))
 
 window.close()
