@@ -2,12 +2,13 @@ import Funtions.functions as func
 import PySimpleGUI as sg
 import time
 
-sg.theme("DarkPurple4")
+sg.theme("black")
 clock = sg.Text('', key='clock')
 label = sg.Text('Type in a todo')
 
 input_box = sg.InputText(tooltip="Enter todo", key="todo")
-add_button = sg.Button("Add", size=10)
+add_button = sg.Button(size=2, image_source="add.png", mouseover_colors="LightBlue2",
+                       tooltip="Add to-do", key="Add")
 list_box = sg.Listbox(func.get_todos(), key="todos",
                       enable_events=True, size=[45, 10])
 

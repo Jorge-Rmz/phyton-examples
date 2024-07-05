@@ -4,3 +4,4 @@ seem is parecer o dar la impresion de algo
 turn --- Girar, dar vueltas o dar vuelta
 Hold is Sostener o retener
 
+
